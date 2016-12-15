@@ -1,21 +1,136 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>MAP672 Portfolio Example</title>
+    <meta charset="utf-8">
+    <title>Jairus Rossi Mapping Portfolio</title>
 
-<meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+    <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
 
-<style>
-    
-/* CSS style rules go here! */   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
 
-</style>
+    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            background: #57bc90;
+            font-family: Imprima, sans-serif;
+        }
+        
+        header {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: #77c9d4;
+            padding: 15px 0 20px;
+        }
+        
+        h1 {
+            font-family: Raleway, sans-serif;
+            color: whitesmoke;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        h2 {
+            font-family: Raleway, sans-serif;
+            color: whitesmoke;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        h3 {
+            font-family: Raleway, sans-serif;
+            color: #015249
+        }
+        
+        p {
+            font-family: Raleway, sans-serif;
+            font-size: .9em;
+            color: whitesmoke;
+        }
+        
+        ul {
+            font-family: Raleway, sans-serif;
+            list-style-type: none;
+            font-size: .9em;
+            color: #375671;
+            line-height: 1.6em;
+        }
+        
+        a,
+        a:visited {
+            color: yellow;
+        }
+        
+        .project {
+            width: 80%;
+            min-width: 800px;
+            height: 100%;
+            margin: 35px auto;
+        }
+        
+        .project:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .project-image {
+            width: 388px;
+            height: 240px;
+            background: white;
+            float: left;
+            margin-right: 20px;
+            border: 2px solid #dddddd;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Jairus Rossi's Mapping Portfolio</h1>
+        <h2>Department of Agricultural Economics, University of Kentucky</h2>
+    </header>
 
-    <p>Hello World! I’m going to be a portfolio page.</p>
-    
+    <section class="project">
+        <a target='_blank' href="maps/Pittsburgh.pdf"><img src="images/Pittsburgh.png" alt="Map of Pittsburgh Transit" class="project-image" /></a>
+        <h3><a target = '_blank' href="maps/Pittsburgh.pdf">Pittsburgh Bus Stops</a></h3>
+        <p>The map identifies the locations and concentration of bus stops within the city of Pittsburgh. </p>
+        <p>This map was produced using QGIS with data from Pittsburgh ArcGIS Online Open Data.</p>
+        <ul>
+            <li>See the map: <a target='_blank' href="maps/Pittsburgh.pdf"> Pittsburgh Transit</a></li>
+            <li>Data Source: <a target='_blank' href="http://pghgis.pittsburghpa.opendata.arcgis.com/">Pittsburgh ArcGIS Online Open Data</a></li>
+        </ul>
+    </section>
+
+    <section class="project">
+        <a target='_blank' href="https://jairusrossi.github.io/sportsball/"> <img src="images/sportsball.png" alt="Teams I hate" class="project-image"></a>
+        <h3><a target='_blank' href="https://jairusrossi.github.io/sportsball/">Personal Nemesis Cities for My Sportsball Teams</a></h3>
+        <p>This map displays locations of teams which have given me my worst experiences of sports fandom.</p>
+        <ul>
+            <li>See the map: <a target='_blank' href="https://jairusrossi.github.io/sportsball/">Locations of Rogue Sports Teams</a></li>
+        </ul>
+
+    </section>
+
+    <section class="project">
+        <a target='_blank' href="https://jairusrossi.carto.com/viz/16561a96-f28b-11e5-a9cf-0ecfd53eb7d3/public_map"> <img src="images/ky_ag.png" alt="CSAs in Kentucky" class="project-image"> </a>
+        <h3><a target='_blank' href="https://jairusrossi.carto.com/viz/16561a96-f28b-11e5-a9cf-0ecfd53eb7d3/public_map">Community Supported Agriculture in Kentucky</a>
+</h3>
+        <p>This map shows the locations of farms offering community supported agriculture (CSA) programs.</p>
+        <p>This map was produced using CartoDB with data from state and national Departments of Agriculture.</p>
+        <ul>
+            <li>See the map: <a target='_blank' href="https://jairusrossi.carto.com/viz/16561a96-f28b-11e5-a9cf-0ecfd53eb7d3/public_map">CSAs in Kentucky</a></li>
+            <li>Data Sources: <a target='_blank' href="https://www.agcensus.usda.gov/">USDA Census of Agriculture</a> and <a target='_blank' href="http://www.kyproud.com/kentucky-proud-producers.aspx">The Kentucky Department of Agriculture</a></li>
+        </ul>
+    </section>
+
+
+
 </body>
+
 </html>
